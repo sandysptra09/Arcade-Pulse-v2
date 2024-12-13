@@ -10,17 +10,17 @@ export default function Navbar() {
 
     return (
         <header className="bg-[#121216] text-white shadow-sm">
-            {/* Navbar */}
+
             <div className="flex items-center justify-between px-6 py-4">
-                {/* Logo and Links */}
+
                 <div className="flex items-center space-x-8">
-                    {/* Logo */}
+
                     <a href="/" className="flex items-center space-x-4">
                         <img className="h-8 w-auto" src="/arcade.pulse.png" alt="Arcade Pulse Logo" />
                         <span className="text-xl font-bold tracking-wide">STORE</span>
                     </a>
 
-                    {/* Links (Desktop Only) */}
+
                     <nav className="hidden md:flex space-x-6">
                         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors duration-200">
                             Support
@@ -31,7 +31,7 @@ export default function Navbar() {
                     </nav>
                 </div>
 
-                {/* Buttons (Desktop Only) */}
+
                 <div className="hidden md:flex items-center space-x-4">
                     <button className="text-sm text-gray-400 hover:text-white transition-colors duration-200">
                         Sign in
@@ -41,7 +41,7 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                {/* Hamburger Menu (Mobile Only) */}
+
                 <div className="md:hidden">
                     <button
                         className="text-gray-400 hover:text-white"
@@ -65,7 +65,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
+
             {isMenuOpen && (
                 <div className="md:hidden bg-[#1c1c22]">
                     <nav className="flex flex-col space-y-4 p-4">
